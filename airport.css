@@ -1,0 +1,122 @@
+body {
+ background-image: linear-gradient(to right, #A0CEC4 25%, #D1EEFC 75%)
+ }
+
+header {
+ background-image: linear-gradient(to right, #A0CEC4 25%, #D1EEFC 75%); 
+ max-height: min-content;
+ width: 100%;
+ }
+
+#scape {
+   position: relative;
+   margin: auto;
+   width: 100%;
+   max-width: 1500px;
+   text-align: center;
+ }
+
+#plane {
+   position: absolute;
+   animation: fly 30s linear 0s infinite;
+   width: 8%;
+   max-width: 123px;
+   height: auto;
+ }
+
+#title {
+   position: absolute;
+   text-align: center;
+   width: 100%;
+   top: 0%;
+   font-size: 5em;
+   text-transform: uppercase;
+   font-family: sans-serif;
+ }
+
+#sun {
+   color: rgb(227, 201, 5);
+   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+ }
+
+#air {
+   color: rgb(56, 174, 224);
+   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+ }
+
+ @keyframes fly {
+    0% {top: 79%; left: 1%;}
+    2% {top: 79%; left: 1%;}
+    5% {top: 78%; left: 12%;}
+    8% {top: 55%; left: 25%;}
+    18% {top: 55%; left: 68%;}
+    22% {top: 78%; left: 79%;}
+    24% {top: 80%; left: 90%;}
+    26% {top: 80%; left: 90%; transform: scalex(1)}
+    27% {top: 80%; left: 90%;transform: scalex(-1)}
+    50% {top: 80%; left: 90%;}
+    52% {top: 78%; left: 80%;}
+    56% {top: 55%; left: 68%;}
+    66% {top: 55%; left: 25%;}
+    70% {top: 78%; left: 12%;}
+    72% {top: 79%; left: 1%;}
+    74% {top: 79%; left: 1%;transform: scalex(-1)}
+    75% {top: 79%; left: 1%;transform: scalex(1)}
+    100% {top: 79%; left: 1%;}
+ }
+
+@media only screen and (max-width: 1200px) {
+ #title {
+  font-size: 4em;
+ }
+ @keyframes fly {
+    0% {top: 78%; left: 1%;}
+    2% {top: 78%; left: 1%;}
+    5% {top: 76%; left: 12%;}
+    8% {top: 55%; left: 25%;}
+    18% {top: 55%; left: 68%;}
+    22% {top: 76%; left: 80%;}
+    24% {top: 80%; left: 90%;}
+    26% {top: 80%; left: 90%; transform: scalex(1)}
+    27% {top: 80%; left: 90%;transform: scalex(-1)}
+    50% {top: 80%; left: 90%;}
+    52% {top: 77%; left: 82%;}
+    56% {top: 55%; left: 68%;}
+    66% {top: 55%; left: 25%;}
+    70% {top: 76%; left: 12%;}
+    72% {top: 78%; left: 1%;}
+    74% {top: 78%; left: 1%;transform: scalex(-1)}
+    75% {top: 78%; left: 1%;transform: scalex(1)}
+    100% {top: 78%; left: 1%;}
+   }
+ }
+@media only screen and (max-width: 1200px) {
+    #title {
+        font-size: 3em;
+    }
+}
+@media only screen and (max-width: 720px) {
+    #title {
+        font-size: 2em;
+    }
+  @keyframes fly {
+    0% {top: 77%; left: 1%;}
+    2% {top: 77%; left: 1%;}
+    5% {top: 75%; left: 12%;}
+    8% {top: 55%; left: 25%;}
+    18% {top: 55%; left: 68%;}
+    22% {top: 76%; left: 80%;}
+    24% {top: 78%; left: 90%;}
+    26% {top: 78%; left: 90%; transform: scalex(1)}
+    27% {top: 78%; left: 90%;transform: scalex(-1)}
+    50% {top: 78%; left: 90%;}
+    52% {top: 77%; left: 82%;}
+    56% {top: 55%; left: 68%;}
+    66% {top: 55%; left: 25%;}
+    70% {top: 76%; left: 12%;}
+    72% {top: 77%; left: 1%;}
+    74% {top: 77%; left: 1%;transform: scalex(-1)}
+    75% {top: 77%; left: 1%;transform: scalex(1)}
+    100% {top: 77%; left: 1%;}
+  }
+}

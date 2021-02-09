@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>      Airport    </title>
+ <meta charset="UTF-8">
+ <meta name="description" content="plane-animation">
+ <meta name="author" content="Tetiana Larina">
+<style>
+ @keyframes fly1 {
+  0% {top: 75%; left: 1%;}
+  6% {top: 75%; left: 1%;}
+  12% {top: 73%; left: 10%;}
+  24% {top: 40%; left: 25%;}
+  54% {top: 40%; left: 68%;}
+  65% {top: 74%; left: 78%;}
+  75% {top: 76%; left: 90%;}
+  100% {top: 76%; left: 90%;}
+ }
+
+ @keyframes fly2 {
+  0% {top: 76%; left: 90%;}
+  6% {top: 76%; left: 90%;}
+  12% {top: 73%; left: 80%;}
+  24% {top: 20%; left: 68%;}
+  54% {top: 20%; left: 25%;}
+  69% {top: 73%; left: 11%;}
+  75% {top: 75%; left: 1%;}
+  100% {top: 75%; left: 1%;}
+ }
+
+ body {
+  background-color: lightgreen;
+ }
+
+ #scape {
+  position: relative;
+  width: 1300px;
+  margin: auto;
+ }
+
+ #plane1 {
+  position: absolute;
+  animation: fly1 12s linear 0s infinite;
+ }
+
+ #plane2 {
+  position: absolute;
+  animation: fly2 12s linear 0s infinite;
+ }
+</style>
+</head>
+
+<body>
+ <header id="scape"> 
+  <img id="scape" src="./images/scape.png" alt="plane"> 
+  <img id="plane1" src="./images/plane1.png" alt="plane1"> 
+  <img id="plane2" src="./images/plane2.png" alt="plane2"> 
+ <header>
+</body>
+</html>
